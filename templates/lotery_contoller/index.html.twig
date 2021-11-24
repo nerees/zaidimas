@@ -1,0 +1,146 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kvitų loterija{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="cia-flex-menu">
+        <a href="/" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Pradžia"><i class="material-icons">home</i></a>
+        <a href="#prizai" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Prizai"><i class="material-icons">card_giftcard</i></a>
+        <a href="/laimetojai" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Laimėtojai"><i class="material-icons">people_outline</i></a>
+        <a href="/taisykles" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Taisyklės"><i class="material-icons">playlist_add_check</i></a>
+    </div>
+    <div class="center nn-mtb-20">
+        <img class="responsive-img" src="{{ asset('build/img/cia_kaledos.png') }}" alt="kalėdų žaidimo pavadinimas">
+    </div>
+
+<div class="form-container">
+    <h2>Registruoti kvitą</h2>
+    <form id="register" action="/register" method="post">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" name="name" class="validate" required maxlength="250">
+            <label for="name">Jūsų vardas</label>
+        </div>
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mail</i>
+            <input type="email" name="email" class="validate" required maxlength="250">
+            <label for="email">Jūsų el. pašto adresas</label>
+        </div>
+        <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i>
+            <input type="tel" name="tel" required maxlength="250">
+            <label for="tel">Jūsų telefono numeris</label>
+        </div>
+        <div class="input-field col s12">
+            <i class="material-icons prefix">receipt</i>
+            <input type="text" name="checknr" required>
+            <label for="checknr">Kvito Nr.</label>
+        </div>
+        <p>
+            <label>
+                <input type="checkbox" name="rules" required>
+                <span>Sutinku su žaidimo taisyklėmis</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="newsletter">
+                <span>Prenumeruoti ČIA MARKET naujienlaiškį</span>
+            </label>
+        </p>
+        <button type="submit" class="btn red right">Registruoti</button>
+    </form>
+</div>
+</div>
+
+    <div class="kaspinas">
+       <img class="responsive-img" src="{{ asset('build/img/kaspinas.png') }}" alt="kaspinas fonas">
+    </div>
+
+        <div class="red-prizes" id="prizai">
+            <div class="container relatyvas">
+                <img class="margin-no" src="{{ asset('build/img/prizas1.png') }}" alt="prizas1">
+                <img class="margin-yes" src="{{ asset('build/img/prizas2.png') }}" alt="prizas2">
+                <img class="margin-yes" src="{{ asset('build/img/prizas3.png') }}" alt="prizas3">
+                <img class="margin-no" src="{{ asset('build/img/prizas4.png') }}" alt="prizas4">
+            </div>
+        </div>
+
+    <div id="modal1" class="modal modalOk green darken-2">
+        <div class="modal-content">
+            <h4 class="white-text">Puiku!</h4>
+            <p class="white-text">Jūsų kvitas sėkmingai užregistruotas!</p>
+        </div>
+        <div class="modal-footer green darken-2 white-text">
+            <a href="/" class="modal-close waves-effect waves-green btn-flat white-text">Uždaryti</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal modalNo red darken-4">
+        <div class="modal-content">
+            <h4 class="white-text">Dėmesio!</h4>
+            <p class="white-text">Patikrinkite ar teisingai užpildėte informaciją?</p>
+        </div>
+        <div class="modal-footer red darken-4">
+            <a href="/" class="modal-close waves-effect waves-green btn-flat white-text">Uždaryti</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal modalNo red darken-4">
+        <div class="modal-content">
+            <h4 class="white-text">Dėmesio!</h4>
+            <p class="white-text">Toks kvito numeris jau registruotas</p>
+        </div>
+        <div class="modal-footer red darken-4">
+            <a href="/" class="modal-close waves-effect waves-green btn-flat white-text">Uždaryti</a>
+        </div>
+    </div>
+
+    {% if result is defined %}
+
+        {% if result == 'added' %}
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    let elemOk = document.getElementById('modal1');
+                    let options = {
+                        "opacity" : "0.5",
+                        "inDuration" : "250"
+                    };
+                    let instanceOk = M.Modal.init(elemOk, options);
+                    instanceOk.open();
+                });
+            </script>
+        {% endif %}
+        {% if result == 'not' %}
+            <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    let elemNo = document.getElementById('modal2');
+                    let options = {
+                    "opacity" : "0.5",
+                    "inDuration" : "250"
+                };
+                    let instanceNo = M.Modal.init(elemNo, options);
+                    instanceNo.open();
+                });
+            </script>
+        {% endif %}
+        {% if result == 'exists' %}
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    let elemExists = document.getElementById('modal3');
+                    let options = {
+                        "opacity" : "0.5",
+                        "inDuration" : "250"
+                    };
+                    let instanceExists = M.Modal.init(elemExists, options);
+                    instanceExists.open();
+                });
+            </script>
+        {% endif %}
+
+    {% endif %}
+
+{% endblock %}
+{% block footer %}
+{% endblock %}

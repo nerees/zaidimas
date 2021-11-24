@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Čia Market Kalėdinė kvitų toterija. Laimėjimai kiekvieną savaitę">
+        <title>{% block title %} Čia Kalėdos {% endblock %}</title>
+        <meta property="og:title" content="Čia Market Kalėdinė kvitų toterija. Laimėjimai kiekvieną savaitę">
+        <meta property="og:type" content="Čia Market Kalėdinė kvitų toterija. Laimėjimai kiekvieną savaitę">
+        <meta property="og:url" content="https://dovana.ciamarket.lt/zaidimas">
+        <meta property="og:image" content="{{ asset('build/img/cover.jpg') }}">
+        <meta name="theme-color" content="#d03437">
+        <link rel="icon" type="image/x-icon" href="{{ asset('build/img/favicon.png') }}" />
+
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+
+            <div class="nn-pad-40">
+                <h2>Žaidimo rėmėjai</h2>
+                <br><br><br>
+                <div class="sponsors">
+                    <img src="{{ asset('build/img/r1.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r2.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r3.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r4.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r5.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r6.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r7.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r8.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r9.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r11.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r12.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r13.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r14.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r15.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r16.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r17.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r18.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r19.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r20.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r21.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r23.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r24.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r25.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r26.png') }}" alt="remejai">
+                    <img src="{{ asset('build/img/r10.png') }}" alt="remejai">
+                </div>
+            </div>
+
+
+    </body>
+</html>

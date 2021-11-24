@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kvitų loterija{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="cia-flex-menu">
+            <a href="/" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Pradžia"><i class="material-icons">home</i></a>
+            <a href="#prizai" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Prizai"><i class="material-icons">card_giftcard</i></a>
+            <a href="/laimetojai" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Laimėtojai"><i class="material-icons">people_outline</i></a>
+            <a href="/taisykles" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Taisyklės"><i class="material-icons">playlist_add_check</i></a>
+        </div>
+        <div class="center nn-mtb-20">
+            <img class="responsive-img" src="{{ asset('build/img/cia_kaledos.png') }}" alt="kalėdų žaidimo pavadinimas">
+        </div>
+        <h2>Žaidimo prizų laimėtojai</h2>
+        <div class="winners">
+            <h4>Neįvyko prizų traukimo etapas</h4>
+
+        </div>
+
+
+    </div>
+{% endblock %}
+{% block footer %}
+{% endblock %}

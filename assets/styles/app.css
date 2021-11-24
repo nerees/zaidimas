@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+
+    background: #f2feff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f2feff 0%, #f2feff 34%, #f2feff 61%, #c8dee3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f2feff 0%,#f2feff 34%,#f2feff 61%,#c8dee3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f2feff 0%,#f2feff 34%,#f2feff 61%,#c8dee3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2feff', endColorstr='#c8dee3',GradientType=0 ); /* IE6-9 */
+
+
+}
+.cia-flex-menu {
+     display: flex;
+     flex-direction: row;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     justify-content: center;
+ }
+.cia-flex-menu > a:not(first-child){
+    margin-left: 10px;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    border-bottom: 1px solid #c24156;
+}
+/* label color */
+.input-field label {
+    color: #c24156;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #c24156;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #c24156;
+    box-shadow: 0 1px 0 0 #c24156;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #0c7ed3;
+    box-shadow: 0 1px 0 0 #0c7ed3;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #000;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #000;
+}
+.form-container {
+    width:80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nn-mtb-20 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.nn-mtb-20 img {
+
+}
+.kaspinas {
+    position: absolute;
+    top: 770px;
+    text-align: center;
+    z-index: 2;
+}
+.red-prizes {
+    margin-top: calc(24%);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#782e2f+0,d03437+19,ce5456+50,d03437+83,782e2f+100 */
+    background: #782e2f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #782e2f 0%, #d03437 19%, #ce5456 50%, #d03437 83%, #782e2f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #782e2f 0%,#d03437 19%,#ce5456 50%,#d03437 83%,#782e2f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #782e2f 0%,#d03437 19%,#ce5456 50%,#d03437 83%,#782e2f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#782e2f', endColorstr='#782e2f',GradientType=0 ); /* IE6-9 */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.relatyvas {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.relatyvas img {
+    height: auto;
+    max-width: 280px;
+    margin-bottom: auto;
+}
+
+.margin-no {
+    margin-top: 0;
+}
+.margin-yes {
+    margin-top: 16%;
+}
+.nn-pad-40 {
+    padding: 60px 40px;
+}
+.sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 0px dotted #B0413E;
+    padding: 10px;
+    justify-content: center;
+}
+.sponsors img{
+    width:auto;
+    height: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 1168px) {
+    .relatyvas {
+        flex-wrap: wrap;
+    }
+    .nn-pad-40 {
+        padding: 40px 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cia-flex-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .cia-flex-menu > a{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .kaspinas {
+        position: absolute;
+        top: 690px;
+    }
+    .red-prizes {
+        margin-top: 160px;
+    }
+    .margin-no {
+        margin-top: 0;
+    }
+    .margin-yes {
+        margin-top: 0;
+    }
+    .sponsors img{
+        max-width: 80px;
+    }
+
+}
+
+.modalOk {
+    max-width: 400px;
+}
+.modalNo {
+    max-width: 400px;
+}

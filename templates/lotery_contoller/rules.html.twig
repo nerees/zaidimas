@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kvitų loterija{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="cia-flex-menu">
+            <a href="/" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Pradžia"><i class="material-icons">home</i></a>
+            <a href="#prizai" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Prizai"><i class="material-icons">card_giftcard</i></a>
+            <a href="/laimetojai" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Laimėtojai"><i class="material-icons">people_outline</i></a>
+            <a href="/taisykles" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Taisyklės"><i class="material-icons">playlist_add_check</i></a>
+        </div>
+        <div class="center nn-mtb-20">
+            <img class="responsive-img" src="{{ asset('build/img/cia_kaledos.png') }}" alt="kalėdų žaidimo pavadinimas">
+        </div>
+        <h2>Žaidimo taisyklės</h2>
+        <br><br>
+        <div class="rules">
+            <h4>ŽAIDIMO ORGANIZATORIUS:</h4>
+            Žaidimo organizatorius yra uždaroji akcinė bendrovė „ČIA MARKET“, juridinio asmens kodas 141354683, buveinės adresas Sedos g. 35A, LT-87101, Telšiai, Lietuva (toliau - Organizatorius). Žaidimo taisyklės (toliau – Taisyklės) nustato „ČIA KALĖDOS!” (toliau - Žaidimas) vykdymo, jo laimėtojų nustatymo ir prizų atsiėmimo tvarką bei Žaidimo organizatoriaus/laimėtojų teises ir pareigas.
+            <h4>ŽAIDIMO TRUKMĖ:</h4>
+            Akcija vykdoma visose „ČIA MARKET“ prekybos tinklo parduotuvėse nuo 2021 m. lapkričio 23 d. iki gruodžio 20 d. imtinai. Dalyvauti akcijoje gali visi pirkėjai, perkantys UAB „ČIA MARKET“ tinkle už 20 € ar didesnę sumą. Žaidime galima registruoti visus kvitus, kurie turi nurodytą informaciją apie "ČIA KALĖDOS!" bei turi registruojamą kvito numerį po žaidimo nuoroda.
+            Akcijoje negali dalyvauti UAB „ČIA MARKET“ darbuotojai bei jų šeimos nariai.
+            <h4>PRIZINIO FONDO VERTĖ:</h4>
+            <strong>
+            <p>Žaidimo prizinį fondą sudaro prizai, kurių vertė - 4614,95 Eurai.</p>
+
+            <p>Prizai ir jų kiekis bei vertė:</p>
+            <p>
+            1. Žurnalo MOTERIS metinė prenumerata, 1 vnt. (prizo vertė 39,95eur);
+            ČIA dovanų kortelės 20vnt x 10eur, 20vnt x 15eur, 10vnt x 20eur ir 10vnt x 30eur (dovanų kortelių bendra vertė 1000eur);
+            </p>
+            2. Kvietimas į VICHY vandens pramogų parką, neriboto apsilankymo vienkartinis bilietas šeimai (2 suaugę + 1 vaikas iki 14 m arba 1 suaugęs ir 2 vaikai iki 14 m.) prizo vertė 55eur;                               ČIA dovanų kortelės 20vnt x 10eur, 20vnt x 15eur, 10vnt x 20eur ir 10vnt x 30eur (dovanų kortelių bendra vertė 1000eur);
+            <p>
+            3. Nakvynė 3+ žvaigždučių viešbutyje CALVARY Hotel & Restaurant Vilniuje su romantine vakariene (prizo vertė 96eur);
+            ČIA dovanų kortelės 20vnt x 10eur, 20vnt x 15eur, 10vnt x 20eur ir 10vnt x 30eur (dovanų kortelių bendra vertė 1000eur);
+            </p>
+            <p>
+            4. Karališkas poilsis centre AQUA ir procedūros Druskininkų gydykloje - 1 nakvynė 2 asmenims. Nakvynė  prabangiausiame kambaryje su sūkurine vonia bei pirtimi, svečiai galės naudotis vandens parko paslaugomis bei procedūromis gydykloje (prizo vertė 424eur);                              ČIA dovanų kortelės 20vnt x 10eur, 20vnt x 15eur, 10vnt x 20eur ir 10vnt x 30eur (dovanų kortelių bendra vertė 1000eur);
+            </p>
+            </strong>
+            <h4>DALYVAVIMO SĄLYGOS:</h4>
+            Pirkėjas, perkantis už 20€ ar daugiau, privalo išsaugoti pirkimo kvitą iki žaidimo pabaigos, kol atsiims prizą (laimėjimo atveju). Nemokamai registruokitės svetainėje www.ciamarket.lt/kaledos.
+            Kvite rasite informaciją apie Žaidimą, bei registruojamą kvito numerį. Registruotis užpildant laukelius: „VARDAS, TELEFONO NUMERIS, EL. PAŠTAS, KVITO NUMERIS, ČIA MARKET PARDUOTUVĖ, iš kurios Jums būtų patogu atsiimti prizą, laimėjimo atveju“ (pavyzdžiui: Vardenis, 86XX XX XXX, vardenis@pavardenis.lt, 1/12345, Žemaitės g. 26, Telšiai). Akcijai dalyviai registruojami tik pilnai ir teisingai užpildę registracijos formą internetiniame akcijos puslapyje. Vienas dalyvis Žaidime gali registruoti neribotą kiekį pirkinių kvitų. Kiekvieną kartą apsipirkdamas UAB „ČIA MARKET“ prekybos tinkle ir registruodamas kiekvieną naują - unikalų pirkimo kvito numerį. Pasikartojantys pirkimo kvitai į Žaidimo dalyvių sąrašą netraukiami. Pirkimo kvitą būtina saugoti iki Žaidimo pabaigos.
+            Asmenys, registruodami kvitą ir pateikdami savo duomenis bei registracijos formoje pažymėdami, kad „Susipažino ir sutinka su Žaidimo taisyklėmis“, patvirtina, kad sutinka, jog minėti duomenys būtų tvarkomi Žaidimo vykdymo tikslais, t.y. kad registracijos formoje nurodyti duomenys būtų naudojami laimingiems kvitams išrinkti, o mobiliojo telefono numeris - informuoti laimėtoją apie laimėjimą. Taip pat asmenys, registruodami kvitą, laimėjimo atveju sutinka, kad registracijos formoje jų nurodytas vardas, kvito numeris, būtų viešai paskelbti Žaidimo tinklalapyje www.ciamarket.lt ar kitose žiniasklaidos priemonėse. Asmuo savo sutikimą gali atšaukti kreipdamasis raštu į Žaidimo organizatorių, tokiu atveju dalyvis, nesutikdamas su jo duomenų tvarkymu ir (ar) pareikalavęs nutraukti duomenų tvarkymo veiksmus, praranda teisę dalyvauti Žaidime ir/ar praranda teisę į Žaidimo prizą.
+            Taip pat kiekvienas Žaidimo dalyvis besiregistruodamas registracijos formoje pažymėdamas, kad „Sutinku gauti tiesioginės rinkodaros pasiūlymus“ patvirtina, kad sutinka, jog jo pateiktus asmens duomenis Organizatorius naudotų tiesioginės rinkodaros tikslais pateikiant Žaidimo dalyviui naujienlaiškius, pasiūlymus. Sutikimą jo duomenis naudoti rinkodaros tikslais dalyvis gali bet kada atšaukti kreipdamasis į organizatorių. Sutikimų atšaukimas nedaro poveikio sutikimu pagrįsto duomenų tvarkymo, atlikto iki sutikimo atšaukimo, teisėtumui.
+            Žaidimo dalyvių duomenis, surinktus tiesioginės rinkodaros tikslais, Organizatorius saugos ne ilgiau kaip [terminas].12 mėnesių.
+            Žaidimo Organizatorius pasilieka teisę neleisti dalyvauti ar diskvalifikuoti iš Žaidimo asmenį, turėdamas pagrindą įtarti, kad asmuo pažeidžia teisės aktų reikalavimus ar šias Žaidimo taisykles bei sąlygas.
+            <h4>ŽAIDIMO EIGA, LAIMĖTOJŲ NUSTATYMAS:</h4>
+            Laimėtojai bus renkami atsitiktiniu būdu kompiuterinėmis programomis kas savaitę, viso bus atrinkta 244 (du šimtai keturiasdešimt keturi) laimėtojai, žemiau nustatytu grafiku:
+            I ETAPAS
+            1. Registracijos laikotarpis: 2021 11 23-2021 11 29, 00:00-23:59 val.; Laimėti prizai ir jų kiekis: 1 (viena) žurnalo MOTERIS metinė prenumerata, 61 (šešiasdešimt viena) dovanų kortelė;
+            II ETAPAS
+            2. Registracijos laikotarpis: 2021 11 30-2021 12 06, 00:00-23:59 val.; Laimėti prizai ir jų kiekis: Kvietimas į VICHY vandens pramogų parką, neriboto apsilankymo vienkartinis bilietas šeimai, 61 (šešiasdešimt viena) dovanų kortelė;
+            III ETAPAS
+            3. Registracijos laikotarpis: 2021 12 07-2021 12 13, 00:00-23:59 val.; Laimėti prizai ir jų kiekis: Nakvynė 3+ žvaigždučių viešbutyje CALVARY Hotel & Restaurant Vilniuje su romantine vakariene, 61 (šešiasdešimt viena) dovanų kortelė;
+            IV ETAPAS
+            3. Registracijos laikotarpis: 2021 12 14-2021 12 20, 00:00-23:59 val.; Laimėti prizai ir jų kiekis: Karališkas poilsis centre AQUA ir procedūros Druskininkų gydykloje - 1 nakvynė 2 asmenims., 61 (šešiasdešimt viena) dovanų kortelė;
+            Kas savaitę bus nustatyta: I etape - 61 (šešiasdešimt vienas laimėtojas), II etape - 61 (šešiasdešimt vienas laimėtojas), III etape - 61 (šešiasdešimt vienas laimėtojas), IV etape - 61 (šešiasdešimt vienas laimėtojas).
+
+            Teisingai užregistravus pirkinio kvitą nuo 2021 m. lapkričio 23 d. iki gruodžio 20 d. imtinai. Dalyvis dalyvauja žaidime, kurio prizų laimėtojai bus atrinkti atsitiktinės atrankos būdu. Prizai į pinigus ar kitus prizus nekeičiami.
+            <h4>LAIMĖTOJŲ SKELBIMAS:</h4>
+            Žaidimo nugalėtojai bus paskelbti kas savaitę interneto svetainėje www.ciamarket.lt/kaledos per 3 (tris) darbo dienas po laimėtojų nustatymo ir ten publikuojami 3 (tris) savaites po paskutinės Žaidimo dienos.
+            Nepavykus su laimėtojais susisiekti registracijoje nurodytais kontaktais per 3 (tris) savaites nuo laimėtojų paskelbimo datos, laimėjimas bus nebegaliojantis ir prizas laimėtojui perduotas nebus.
+            <h4>PRIZŲ ATSIĖMIMAS:</h4>
+            Prizų laimėtojai, prizus galės atsiimti bet kurioje UAB „ČIA MARKET” prekybos tinklo parduotuvėje, kurią bus nurodę registracijos formoje arba kitu abiem pusėms patogiu būdu. Atsiimti prizą laimėtojas gali tik asmeniškai, iš anksto suderinus dėl prizo atsiėmimo vietos. Prizo laimėtojas privalo pateikti asmens dokumentą ir pirkimo kvitą, kurio numeris buvo registruotas akcijai ir išrinktas laimingu. Prizų atsiėmimo laikotarpis yra iki 2021 sausio 10 d. Jei laimėtojas neatvyksta atsiimti prizo iki numatyto Žaidimo prizų atsiėmimo laikotarpio pabaigos, arba nepateikia pirkimo kvito, ar pateikto pirkimo kvito numeris nesutampa su akcijoje laimėjusiu kvito numeriu, prizas negali būti įteikiamas ir laikoma, kad visi akcijos organizatoriaus įsipareigojimai laimėtojo atžvilgiu yra pasibaigę ir tinkamai įvykdyti. Jei akcijos laimėtojas yra nepilnametis, pateikiant duomenis jį turi lydėti vienas iš tėvų ar globėjų, bei pateikti asmens tapatybę ar globą patvirtinantį dokumentą.
+            <h4>AKCIJOS DALYVIO IŠLAIDOS:</h4>
+            Norėdamas laimėti prizą, dalyvis turi įsigyti prekių UAB „ČIA MARKET“ prekybos tinkle ne mažiau kaip už 20€. Visas su prizo atsiėmimu susijusias būtinąsias išlaidas prisiima akcijos prizo laimėtojas.
+            <h4>SKUNDŲ PATEIKIMO IR NAGRINĖJIMO TVARKA:</h4>
+            Žaidimo taisyklės yra vienodai privalomos visiems dalyviams. Akcijos dalyviai gali raštu pareikšti pretenzijas dėl akcijos vykdymo iki 2021 m. sausio 10 d. UAB „ČIA MARKET”, Sedos g. 35A, Telšiai arba el. paštu info@ciamarket.lt . Į visas pretenzijas bus atsakyta per 15 darbo dienų. Telefonas pasiteirauti: +370 (444) 22222 (darbo dienomis 8.00 – 17.00). Visi skundai sprendžiami remiantis Lietuvos Respublikos įstatymais.
+            <h4>PAPILDOMA INFORMACIJA:</h4>
+            Organizatorius neatsako už internetinio ryšio trikdžius. Atsiradus techniniams nesklandumams, keliantiems kliūtis organizuojamos akcijos vykdymui, tačiau deda visas galimas pastangas jas pašalinti. Organizatorius pasilieka teisę keisti žaidimo taisykles ir sąlygas bei įsipareigoja iš anksto apie tai informuoti internetinėje svetainėje www.ciamarket.lt. Žaidimo Organizatorius neatsako už galimus prizų laimėtojų nuostolius, patirtus naudojant prizus, ar prizų nepanaudojimą. Žaidimo organizatoriai turi teisę vienašališkai atšaukti, nutraukti Žaidimą bet kuriuo metu, jeigu įvyktų esminis šių Taisyklių pažeidimas ir/ar piktnaudžiavimas jomis arba jeigu atsirastų nenugalimos jėgos (force majeure) aplinkybės, apie tai nedelsiant paskelbęs internetinėje svetainėje www.ciamarket.lt/kaledos.
+            <h4>DĖKOJAME UŽ DALYVAVIMĄ!</h4>
+            <br><br>
+            <h4>Kvito pavyzdys (pabrauktas registruojamas kodas)</h4>
+            <br>
+            <img src="{{ asset('build/img/kvitas.png') }}" alt="kvito pavyzdys">
+
+        </div>
+
+
+    </div>
+
+
+
+{% endblock %}
